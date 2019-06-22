@@ -26,7 +26,7 @@ tar xvzf simulated_KAT-7_ms.tar.gz
 
 ## 版面风格说明（Style Guide）
 
-为了保证内容的前后一致性，在本项目中采用了统一的风格，请后续维护与开发中保持这一风格 [style guide](https://github.com/griffinfoster/fundamentals_of_interferometry/blob/master/0_Introduction/0_introduction.ipynb)。此外，项目也给出了一个修订模板 [editing guide](https://github.com/griffinfoster/fundamentals_of_interferometry/blob/master/0_Introduction/editing_guide.ipynb) 供后续修订中参考使用。
+为了保证内容的前后一致性，在本项目中采用了统一的风格，请后续维护与开发中保持这一风格 [style guide](https://github.com/astronomical-data-processing/fundamentals_of_interferometry_chinese/blob/master/0_Introduction/0_introduction.ipynb)。此外，项目也给出了一个修订模板 [editing guide](https://github.com/astronomical-data-processing/fundamentals_of_interferometry_chinese/blob/master/0_Introduction/editing_guide.ipynb) 供后续修订中参考使用。
 
 ## 设置VirtualENV (Setup contributor virtualenv)
 
@@ -107,10 +107,10 @@ $ git clone https://github.com/[username]/fundamentals_of_interferometry.git
 如果只是希望运行本项目，那可以直接克隆本仓库.
 
 ```
-$ git clone https://github.com/griffinfoster/fundamentals_of_interferometry.git
+$ git clone https://github.com/astronomical-data-processing/fundamentals_of_interferometry_chinese.git
 ```
 
-需要注意的是，更多初学者经常在这里迷糊，一定要记得在构建虚拟环境后，这个虚拟环境是一个完全干净的环境，也就是说在这个环境下没有安装什么软件包，根据软件的需要，我们需要自行安装不同的软件包。安装一般采用两种方法：1）根据项目需要手工运行pip逐个安装；2）直接利用需求文件（requirements file）来安装。一般推荐采用后者。当然如果在安装过程中出了错误，也也需要手工再来进行处理。一般来说，需求文件都放在主目录下[here](https://raw.githubusercontent.com/griffinfoster/fundamentals_of_interferometry/master/requirements.txt).
+需要注意的是，更多初学者经常在这里迷糊，一定要记得在构建虚拟环境后，这个虚拟环境是一个完全干净的环境，也就是说在这个环境下没有安装什么软件包，根据软件的需要，我们需要自行安装不同的软件包。安装一般采用两种方法：1）根据项目需要手工运行pip逐个安装；2）直接利用需求文件（requirements file）来安装。一般推荐采用后者。当然如果在安装过程中出了错误，也也需要手工再来进行处理。一般来说，需求文件都放在主目录下[here](https://raw.githubusercontent.com/astronomical-data-processing/fundamentals_of_interferometry_chinese/master/requirements.txt).
 
 ```
 $ pip install --upgrade pip
