@@ -9,7 +9,7 @@ data/simulated_kat_7_vis/simulated_KAT-7_ms.tar.gz
 data/simulated_kat_7_vis/*.ms
 data/source/
 data/*.tgz
-
+data
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
@@ -70,3 +70,5 @@ target/
 
 # python notebook checkpoints
 .ipynb_checkpoints
+boot.sh
+jupyter_notebook_config.py
