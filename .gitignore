@@ -72,3 +72,4 @@ target/
 .ipynb_checkpoints
 boot.sh
 jupyter_notebook_config.py
+nohup.out

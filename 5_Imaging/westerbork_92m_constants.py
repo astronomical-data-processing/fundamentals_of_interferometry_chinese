@@ -44,3 +44,4 @@ ENU = np.empty(ANTENNA_POSITIONS.shape)
 for a in range(0,NO_ANTENNA):
     ENU[a,:] = np.dot(ecef_to_enu,ANTENNA_POSITIONS[a,:])
 ENU -= ENU[REF_ANTENNA]
+

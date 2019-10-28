@@ -28,26 +28,26 @@ def sim_uv(ref_ra, ref_dec,
     reference_dec_rad = np.deg2rad(ref_dec)
     integration_length_in_deg = integration_length / 24.0 * 360.0
     no_timestamps = int(observation_length_in_hrs / integration_length)
-    row_count = no_timestamps * no_baselines
+    row_count = no_timestamps * no_baselines # the total records
 
     l = no_antenna
     k = no_antenna
     uvw = np.empty([row_count,3])
     
     for r in range(0,row_count):
-        timestamp = r / (no_baselines)
+        timestamp = r // (no_baselines) # dh: change / to //
         baseline_index = r % (no_baselines)
-        increment_antenna_1_coord = (baseline_index / k)
+        increment_antenna_1_coord = (baseline_index // k)  # dh: change / to //
         
         # calculate antenna 1 and antenna 2 ids based on baseline index using some fancy
         # footwork ;). This indexing scheme will enumerate all unique baselines per
         # timestamp.
         
-        l -= (1) * increment_antenna_1_coord
+        l -= (1) * increment_antenna_1_coord 
         k += (l) * increment_antenna_1_coord
         antenna_1 = no_antenna-l
         antenna_2 = no_antenna + (baseline_index-k)
-        new_timestamp = ((baseline_index+1) / no_baselines)
+        new_timestamp = ((baseline_index+1) // no_baselines)  # dh: change / to //
         k -= (no_baselines-no_antenna) * new_timestamp
         l += (no_antenna-1) * new_timestamp
         #conversion to local altitude elevation angles:
