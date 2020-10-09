@@ -51,6 +51,7 @@ htmlcov/
 .coverage
 .coverage.*
 .cache
+.DS_Store
 nosetests.xml
 coverage.xml
 *,cover
